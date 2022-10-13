@@ -144,14 +144,10 @@ $(document).ready(function() {
         var fieldset = $ (".field-full-screen");
 
         send.click(function(){
-            console.log(fieldset[2]);
             var go = checkInput(inputs);
             if(go == 5){
                 back.addClass('disabled');
-                jQuery(this).addClass('rotate');
-                fieldset[0].style.display = "none";
-                fieldset[1].style.display = "none";
-                fieldset[2].style.display = "flex";
+                send.addClass('rotate');
             }else{
                 alert('Compila tutti i campi');
             }
